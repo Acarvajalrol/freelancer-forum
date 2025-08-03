@@ -31,7 +31,7 @@ for (let i = 0; i < NUM_FREELANCERS; i++) {
   const allObjects = getObject();
   freelancerNum.push(allObjects);
 }
-console.log(freelancerNum);
+// console.log(freelancerNum);
 
 const getAvgRate = () => {
   const avgPrice =
@@ -49,7 +49,7 @@ const singleFreelancer = () => {
   return freelancerNum[freelancerOne];
 };
 
-console.log(singleFreelancer());
+// console.log(singleFreelancer());
 
 const listFreelancers = () => {
   const $section = document.createElement("section");
@@ -70,7 +70,7 @@ const listFreelancers = () => {
 
 const listAvgPrice = () => {
   const $p = document.createElement("p");
-  $p.textContent = avgRate;
+  $p.textContent = `The average rate is: ${avgRate}/hr`;
   return $p;
 };
 
